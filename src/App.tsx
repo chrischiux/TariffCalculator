@@ -1,5 +1,5 @@
 import {onSubmit} from "./helper";
-import type{StatusType} from "./helper";
+import type {StatusType} from "./helper";
 import {useState} from "react";
 
 
@@ -110,38 +110,46 @@ function App() {
                     <div className="col-md-4">
                         <div className="card h-100 rounded-4">
                             <div className="card-body">
-                                <h3 className="card-title"><i className="bi-2-square"
-                                                              aria-label="Second step"></i> Current tariff details
+                                <h3 className="card-title">
+                                    <i className="bi-2-square" aria-label="Second step"></i> Current tariff details
                                 </h3>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="number" id="OctopusStanding"
                                            name="OctopusStanding" min="0"
-                                           step="0.01" defaultValue="1"/>
+                                           step="0.01"
+                                        // defaultValue="1"
+                                    />
                                     <label htmlFor="OctopusStanding">Standing Charge 💰</label>
                                 </div>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="number" id="OctopusDay" name="OctopusDay"
                                            min="0"
-                                           step="0.01" defaultValue="1"/>
+                                           step="0.01"
+                                        // defaultValue="1"
+                                    />
                                     <label htmlFor="OctopusDay">Peak rate ☀</label>
                                 </div>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="number" id="OctopusNight" name="OctopusNight"
                                            min="0"
-                                           step="0.01" defaultValue="1"/>
+                                           step="0.01"
+                                        // defaultValue="1"
+                                    />
                                     <label htmlFor="OctopusNight">Off-peak Rate 🌙</label>
                                 </div>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="time" id="OctopusNightStart"
                                            name="OctopusNightStart"
                                            step={1800}
-                                           defaultValue="23:30"/>
+                                        // defaultValue="23:30"
+                                    />
                                     <label htmlFor="OctopusNightStart">Off-peak tariff start time</label>
                                 </div>
                                 <div className="form-floating">
                                     <input className="form-control" type="time" id="OctopusNightEnd"
                                            name="OctopusNightEnd" step={1800}
-                                           defaultValue="05:30"/>
+                                        // defaultValue="05:30"
+                                    />
                                     <label htmlFor="OctopusNightEnd">Off-Peak tariff end time</label>
                                 </div>
                             </div>
@@ -155,31 +163,37 @@ function App() {
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="number" id="NewStanding" name="NewStanding"
                                            min="0"
-                                           step="0.01" defaultValue="1"/>
+                                           step="0.01"
+                                        // defaultValue="1"
+                                    />
                                     <label htmlFor="NewStanding">Standing charge 💰</label>
                                 </div>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="number" id="NewDay" name="NewDay" min="0"
                                            step="0.01"
-                                           defaultValue="1"/>
+                                        // defaultValue="1"
+                                    />
                                     <label htmlFor="NewDay">Peak Rate ☀</label>
                                 </div>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="number" id="NewNight" name="NewNight" min="0"
                                            step="0.01"
-                                           defaultValue="1"/>
+                                        // defaultValue="1"
+                                    />
                                     <label htmlFor="NewNight">Off-Peak Rate 🌙</label>
                                 </div>
                                 <div className="form-floating mb-3">
                                     <input className="form-control" type="time" id="NewNightStart" name="NewNightStart"
                                            step={1800}
-                                           defaultValue="23:30"/>
+                                           // defaultValue="23:30"
+                                    />
                                     <label htmlFor="NewNightStart">Off-peak tariff start time</label>
                                 </div>
                                 <div className="form-floating">
                                     <input className="form-control" type="time" id="NewNightEnd" name="NewNightEnd"
                                            step={1800}
-                                           defaultValue="05:30"/>
+                                           // defaultValue="05:30"
+                                    />
                                     <label htmlFor="NewNightEnd">Off-Peak tariff end time</label>
                                 </div>
                             </div>
